@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn sử dụng</title>
+    <link rel="stylesheet" href="../bs/bootstrap.min.css">
+    <style>
+        .title-hdsd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+        .container {
+            max-width: 1600px;
+        }
+
+        .spe {
+            background-color: #dddddd;
+            border-bottom: 1px solid black;
+        }
+        .nav-link {
+            color: black;
+        }
+        .nav-link:hover {
+            color: red;
+            
+        }
+        .title-inside {
+            font-size: 30px;
+            font-weight: bold;
+       
+        }
+        .ql-li {
+            margin-left: 25px;
+            border-left: 2px solid red;
+        }
+        #qlul {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="title-hdsd">
+            <div>Hướng dẫn sử dụng</div>
+            <div>Phần mềm quản lý cửa hàng linh kiện điện tử Thành Đạt</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3  ">
+                <ul class="nav flex-column">
+                    <li class="nav-item spe">
+                      <a class="nav-link " href="#">Giới thiệu phần mềm</a>
+                    </li>
+                    <li class="nav-item spe">
+                      <a class="nav-link" href="#" id="hdcn">Hướng dẫn Chức năng</a>
+                      <ul class="nav flex-column " id="qlul">
+                        <li class="nav-item ql-li">
+                          <a class="nav-link " href="#">Quản lý hóa đơn</a>
+                        </li>
+                        <li class="nav-item ql-li">
+                          <a class="nav-link" href="#">Quản lý sản phẩm</a>  
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-9">
+                <p class="title-inside">. Một số thông tin cơ bản về phần mềm:</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let hdcn = document.getElementById("hdcn");
+        let qlul = document.getElementById("qlul");
+        qlul.style.display = 'none';
+        hdcn.addEventListener("click", () => {
+            if( qlul.style.display != 'none' ) 
+                qlul.style.display = 'none';
+            else
+                qlul.style.display = 'block';
+            console.log(`done`);
+        });
+    </script>
+    
+</body>
+
+</html>
