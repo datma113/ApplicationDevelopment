@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDSD - Quản lý hóa đơn</title>
+    <link rel="stylesheet" href="../bs/bootstrap.min.css">
+    <style>
+        .title-hdsd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+        .container {
+            max-width: 1600px;
+        }
+
+        .spe {
+            background-color: #dddddd;
+            border-bottom: 1px solid black;
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+        .nav-link:hover {
+            color: red;
+
+        }
+
+        .title-inside {
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        .ql-li {
+            margin-left: 25px;
+            border-left: 2px solid red;
+        }
+
+        #qlul {
+            display: none;
+        }
+
+        .img-in-main {
+            width: 100%;
+            height: 100%;
+        }
+
+        .h1-title-main {
+            display: flex;
+            margin-left: 30%;
+
+        }
+
+        .chung {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .step {
+            font-size: 20px;
+            margin-left: 40px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="title-hdsd">
+            <div>Hướng dẫn sử dụng</div>
+            <div>Phần mềm quản lý cửa hàng linh kiện điện tử Thành Đạt</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3  ">
+                <ul class="nav flex-column">
+                    <li class="nav-item spe">
+                        <a class="nav-link " href="/html/main.html">Giới thiệu phần mềm</a>
+                    </li>
+                    <li class="nav-item spe">
+                        <a class="nav-link" href="#" id="hdcn">Hướng dẫn Chức năng</a>
+                        <ul class="nav flex-column " id="qlul">
+                            <li class="nav-item ql-li">
+                                <a class="nav-link " href="/html/lhdm.html">Lập hóa đơn mới</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="#">Quản lý sản phẩm</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="#">Quản lý Nhân viên</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="#">Quản lý hóa đơn</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="#">Thống kê</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="#">Sao lưu dữ liệu</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-9 chung">
+                <div>
+                    <p class="title-inside">. Giao diện lập hóa đơn mới:</p>
+                    <div>
+
+                        <img src="../img/LapHoaDonMoi/lapHoaDon.png" class="img-in-main" alt="">
+
+                    </div>
+                    <div class="mt-5">
+                        <p class="title-inside">. Chức năng lập hóa đơn:</p>
+                    </div>
+                    <!-------Step------>
+                    <div class="mt-5">
+                        <p class="step"> Bước 1:</p>
+                        <p class="ml-5">chọn mục lập hóa đơn mới trên giao diện chính</p>
+                        <img src="../img/LapHoaDonMoi/b1_lhdm.png" class="img-in-main" alt="">
+                    </div>
+                    <!-------Step------>
+                    <div class="mt-5">
+                        <p class="step"> Bước 2:</p>
+                        <p class="ml-5">Tìm kiếm sản phẩm cần lập hóa đơn</p>
+                        <img src="../img/LapHoaDonMoi/b2_lhdm.png" class="img-in-main" alt="">
+                    </div>
+                    <!-------Step------>
+                    <div class="mt-5">
+                        <p class="step"> Bước 3:</p>
+                        <p class="ml-5">Chọn sản phẩm cần đưa vào hóa đơn.</p>
+                        <img src="../img/LapHoaDonMoi/b3_lhdm.png" class="img-in-main" alt="">
+                    </div>
+                    <!-------Step------>
+                    <div class="mt-5">
+                        <p class="step"> Bước 4:</p>
+                        <p class="ml-5">Tìm kiếm khách hàng và nhập số tiền khách đưa để tiến hành lập hóa đơn</p>
+                        <img src="../img/LapHoaDonMoi/b4_lhdm.png" class="img-in-main" alt="">
+                    </div>
+                    <!-------Step------>
+                    <div class="mt-5">
+                        <p class="step"> Bước 5:</p>
+                        <p class="ml-5">Khi đã đầy đủ thông tin thì tiến hành lập hóa đơn.</p>
+                        <img src="../img/LapHoaDonMoi/b5_lhdm.png" class="img-in-main" alt="">
+                    </div>
+                    <!-------Step------>
+                    <div class="mt-5">
+                        <p class="step"> Bước 6:</p>
+                        <p class="ml-5">Khi bấn vào nút lập hóa đơn, giao diện lập hóa đơn mới sẽ hiện ra.</p>
+                        <p class="ml-5"> Nhân viên check lại hóa đơn nếu đúng thì bấm nút lập hóa đơn</p>
+                        <img src="../img/LapHoaDonMoi/b6-lhdm.png" class="img-in-main" alt="">
+                    </div>
+                    <div class="mt-5">
+                        <p class="step"> Hoàn thành:</p>
+                        <p class="ml-5">Sau khi lập hóa đơn thành công thì sẽ quay về màn hình chính của trang lập hóa đơn.</p>
+                    
+                        <img src="../img/LapHoaDonMoi/lapHoaDon.png" class="img-in-main" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            let hdcn = document.getElementById("hdcn");
+            let qlul = document.getElementById("qlul");
+            qlul.style.display = 'none';
+            hdcn.addEventListener("click", () => {
+                if (qlul.style.display != 'none')
+                    qlul.style.display = 'none';
+                else
+                    qlul.style.display = 'block';
+                console.log(`done`);
+            });
+        </script>
+
+</body>
+
+</html>
