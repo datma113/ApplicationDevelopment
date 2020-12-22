@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDSD - Quản lý hóa đơn</title>
+    <link rel="stylesheet" href="../bs/bootstrap.min.css">
+    <style>
+        .title-hdsd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+        .container {
+            max-width: 1600px;
+        }
+
+        .spe {
+            background-color: #dddddd;
+            border-bottom: 1px solid black;
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+        .nav-link:hover {
+            color: red;
+
+        }
+
+        .title-inside {
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        .ql-li {
+            margin-left: 25px;
+            border-left: 2px solid red;
+        }
+
+        #qlul {
+            display: none;
+        }
+
+        .img-in-main {
+            width: 100%;
+            height: 100%;
+        }
+
+        .h1-title-main {
+            display: flex;
+            margin-left: 30%;
+
+        }
+
+        .chung {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .step {
+            font-size: 20px;
+            margin-left: 40px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="title-hdsd">
+            <div>Hướng dẫn sử dụng</div>
+            <div>Phần mềm quản lý cửa hàng linh kiện điện tử Thành Đạt</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3  ">
+                <ul class="nav flex-column">
+                    <li class="nav-item spe">
+                        <a class="nav-link " href="../html/main.html">Giới thiệu phần mềm</a>
+                    </li>
+                    <li class="nav-item spe">
+                        <a class="nav-link" href="#" id="hdcn">Hướng dẫn Chức năng</a>
+                        <ul class="nav flex-column " id="qlul">
+                            <li class="nav-item ql-li">
+                                <a class="nav-link " href="../html/lhdm.html">Lập hóa đơn mới</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="#">Quản lý sản phẩm</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="#">Quản lý Nhân viên</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="#">Quản lý hóa đơn</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="#">Thống kê</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="#">Sao lưu dữ liệu</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-9 chung">
+                <div>
+                    <p class="title-inside">. Giao diện Quản lý sản phẩm:</p>
+                    <div>
+
+                        <img src="../img/QuanLySanPham/giaoDienChinhQLSP.png" class="img-in-main" alt="">
+
+                    </div>
+                    <div class="mt-5">
+                        <p class="title-inside">. Chức năng Thêm sản phẩm:</p>
+                    </div>
+                    <!-------Step------>
+                    <div class="mt-5">
+                        <p class="step"> Bước 1:</p>
+                        <p class="ml-5">chọn mục Quản lý sản phẩm trên giao diện chính</p>
+                        <img src="../img/QuanLySanPham/themSP_b1.png" class="img-in-main" alt="">
+                    </div>
+                    <!-------Step------>
+                    <div class="mt-5">
+                        <p class="step"> Bước 2:</p>
+                        <p class="ml-5">Điền vào các thông tin sản phẩm vào các trường dữ liệu:</p>
+                        <div class="ml-5 text-danger" style="font-weight: bold; font-size: 20px;">
+                            <p >Lưu ý: </p>
+                            <p class="ml-3">. thương hiệu: là một chuỗi ký tự </p>    
+                            <p class="ml-3">. màu sắc: là chuỗi ký tự </p>
+                            <p class="ml-3">. kích thước: __ x __ x __ mm (trong đó: __ là số nguyên) (ví dụ: 300 x 200 x 100 mm) </p>
+                            <p class="ml-3">. đơn vị tính: chuỗi ký tự </p>
+                            <p class="ml-3">. khối lượng: __ n (trong đó: __ là số, n là khối lượng) (ví dụ: 100g, 2kg) </p>   
+                            <p class="ml-3">. xuất xứ: là một chuỗi ký tự </p>  
+                            <p class="ml-3">. mô tả: bao gồm tất cả ký tự </p>  
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 3:</p>
+                            <p class="ml-5">thực hiện thêm sản phẩm mới.</p>
+                            <img src="../img/QuanLySanPham/themSP_b3.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 4:</p>
+                            <p class="ml-5">Sau khi thêm sản phẩm thành công, hệ thống sẽ thông báo thêm thành công và quay về màn hình chính.</p>
+                            <img src="../img/QuanLySanPham/themSP_b4.png" class="img-in-main" alt="">
+                        </div>
+
+
+                        <div class="mt-5">
+                            <p class="title-inside">. Quản lý nhà cung cấp:</p>
+                        </div>
+                        <div class="mt-5">
+                            <p class="title-inside">. chức năng thêm nhà cung cấp mới:</p>
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 1:</p>
+                            <p class="ml-5">chọn mục Quản lý Nhà cung cấp</p>
+                            <img src="../img/QuanLySanPham/qlncc_b1.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 2:</p>
+                            <p class="ml-5">Giao diện chính nhà cung cấp</p>
+                            <img src="../img/QuanLySanPham/qlncc_b2.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 3:</p>
+                            <p class="ml-5">nhập thông tin nhà cung cấp</p>
+                            <img src="../img/QuanLySanPham/qlncc_qllsp_them1.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 4:</p>
+                            <p class="ml-5">Thêm nhà cung cấp</p>
+                            <img src="../img/QuanLySanPham/qlncc_qllsp_them2.png" class="img-in-main" alt="">
+                        </div>
+                        
+                        <div class="mt-5">
+                            <p class="title-inside">. chức năng sữa thông tin nhà cung cấp :</p>
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 1:</p>
+                            <p class="ml-5">chọn mục Quản lý Nhà cung cấp</p>
+                            <img src="../img/QuanLySanPham/qlncc_b1.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 2:</p>
+                            <p class="ml-5">Giao diện quản lý chính nhà cung cấp</p>
+                            <img src="../img/QuanLySanPham/qlncc_b2.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 3:</p>
+                            <p class="ml-5">chọn dòng dữ liệu cần sữa</p>
+                            <img src="../img/QuanLySanPham/qlncc_sua1.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 4:</p>
+                            <p class="ml-5">sữa thông tin nhà cung cấp</p>
+                            <img src="../img/QuanLySanPham/qlncc_sua2.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 4:</p>
+                            <p class="ml-5">bấm nút lưu</p>
+                            <img src="../img/QuanLySanPham/qlncc_sua3.png" class="img-in-main" alt="">
+                        </div>
+                        
+                        <div class="mt-5">
+                            <p class="title-inside">. Quản lý loại sản phầm:</p>
+                        </div>
+                        <div class="mt-5">
+                            <p class="title-inside">. chức năng Thêm loại sản phẩm:</p>
+                            <img src="../img/QuanLySanPham/qlncc_qllsp1.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 1:</p>
+                            <p class="ml-5">nhập thông tin loại sản phẩm.</p>
+                            <img src="../img/QuanLySanPham/qlncc_qllsp_them1.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 2:</p>
+                            <p class="ml-5">Bấm nút thêm.</p>
+                            <img src="../img/QuanLySanPham/qlncc_qllsp_them2.png" class="img-in-main" alt="">
+                        </div>
+                       
+                       
+                        <div class="mt-5">
+                            <p class="title-inside">. chức năng sữa thông tin loại sản phẩm:</p>
+                            <img src="../img/QuanLySanPham/qlncc_qllsp1.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        
+                        <div class="mt-5">
+                            <p class="step"> Bước 1:</p>
+                            <p class="ml-5">chọn một loại sản phẩm cần sữa.</p>
+                            <img src="../img/QuanLySanPham/qlncc_qllsp_sua.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 2:</p>
+                            <p class="ml-5">nhập thông tin loại sản phẩm cần sữa.</p>
+                            <img src="../img/QuanLySanPham/qlncc_qllsp_sua1.png" class="img-in-main" alt="">
+                        </div>
+                        <!-------Step------>
+                        <div class="mt-5">
+                            <p class="step"> Bước 3:</p>
+                            <p class="ml-5">Bấm nút lưu.</p>
+                            <img src="../img/QuanLySanPham/qlncc_qllsp_sua2.png" class="img-in-main" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            let hdcn = document.getElementById("hdcn");
+            let qlul = document.getElementById("qlul");
+            qlul.style.display = 'none';
+            hdcn.addEventListener("click", () => {
+                if (qlul.style.display != 'none')
+                    qlul.style.display = 'none';
+                else
+                    qlul.style.display = 'block';
+                console.log(`done`);
+            });
+        </script>
+
+</body>
+
+</html>
