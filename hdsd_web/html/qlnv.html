@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn sử dụng</title>
+    <link rel="stylesheet" href="../bs/bootstrap.min.css">
+    <style>
+        .title-hdsd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+        .container {
+            max-width: 1600px;
+        }
+
+        .spe {
+            background-color: #dddddd;
+            border-bottom: 1px solid black;
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+        .nav-link:hover {
+            color: red;
+
+        }
+
+        .title-inside {
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        .ql-li {
+            margin-left: 25px;
+            border-left: 2px solid red;
+        }
+
+        #qlul {
+            display: none;
+        }
+
+        .img-in-main {
+            width: 80%;
+            height: 80%;
+        }
+
+        .h1-title-main {
+            display: flex;
+            margin-left: 30%;
+
+        }
+
+        .chung {
+            display: flex;
+            flex-direction: column;
+        }
+        .step {
+            font-size: 20px;
+            margin-left: 40px;
+            font-weight: bold;
+            color: red;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="title-hdsd">
+            <div>Hướng dẫn sử dụng</div>
+            <div>Phần mềm quản lý cửa hàng linh kiện điện tử Thành Đạt</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3  ">
+                <ul class="nav flex-column">
+                    <li class="nav-item spe">
+                        <a class="nav-link " href="/html/main.html">Giới thiệu phần mềm</a>
+                    </li>
+                    <li class="nav-item spe">
+                        <a class="nav-link" href="#" id="hdcn">Hướng dẫn Chức năng</a>
+                        <ul class="nav flex-column " id="qlul">
+                            <li class="nav-item ql-li">
+                                <a class="nav-link " href="/html/qlhd.html">lập hóa đơn mới</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="/html/qlsp.html">Quản lý sản phẩm</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="/html/qlkh.html">Quản lý khách hàng</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="/html/qlnv.html">Quản lý Nhân viên</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="/html/qlhd.html">Quản lý hóa đơn</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="/html/thongke.html">Thống kê</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="/html/saoluu.html">Sao lưu dữ liệu</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-9 chung">
+                <div>
+                    <p class="title-inside">. Quản lý Nhân viên:</p>
+                    <p>giao diện chính</p>
+                    <img src="../img/QuanLyKhachHang/qlkh_mainFrame.png"  class="img-in-main" alt="">
+                </div>
+                <!-------Step------>
+                <div>
+                    <p class="title-inside">.Chức năng thêm nhân viên mới:</p>             
+                </div>
+                <!-------Step------>
+                <div class="mt-5">
+                    <p class="step"> Bước 1:</p>
+                    <p class="ml-5">chọn mục Quản lý nhân viên trên giao diện chính.</p>
+                    <img src="../img/QuanLyNhanVien/themNV_b1.png" class="img-in-main" alt="">
+                </div>
+                <div class="mt-5">
+                    <p class="step"> Bước 2:</p>
+                    <p class="ml-5">chọn mục Quản lý nhân viên trên giao diện chính.</p>
+                    <img src="../img/QuanLyNhanVien/themNV_b2.png" class="img-in-main" alt="">
+                </div>
+                <div class="mt-5">
+                    <p class="step"> Bước 3:</p>
+                    <p class="ml-5">Bấm nút "thêm".</p>
+                    <img src="../img/QuanLyNhanVien/themNV_b3.png" class="img-in-main" alt="">
+                </div>
+              
+                <div class="mt-5">
+                    <p class="step"> Bước 4:</p>
+                    <p class="ml-5">Thêm thành công.</p>
+                    <img src="../img/QuanLyNhanVien/themNV_b4.png" class="img-in-main" alt="">
+                </div>
+                <!-------Step------>
+                <div>
+                    <p class="title-inside">. Sữa thông tin nhân viên:</p>
+                </div>
+                <!-------Step------>
+                <!-------Step------>
+                <div class="mt-5">
+                    <p class="step"> Bước 1:</p>
+                    <p class="ml-5">chọn mục Nhân viên cần sữa thông tin.</p>
+                    <img src="../img/QuanLyNhanVien/suaNV_b1.png" class="img-in-main" alt="">
+                </div>
+                <div class="mt-5">
+                    <p class="step"> Bước 2:</p>
+                    <p class="ml-5">Sữa thông tin trực tiếp lên trường dữ liệu.</p>
+                    <img src="../img/QuanLyNhanVien/suaNV_b2.png" class="img-in-main" alt="">
+                </div>
+                <div class="mt-5">
+                    <p class="step"> Bước 3:</p>
+                    <p class="ml-5">Nhấn vào nút "lưu".</p>
+                    <img src="../img/QuanLyNhanVien/suaNV_b3.png" class="img-in-main" alt="">
+                </div>
+                <div class="mt-5">
+                    <p class="step"> Bước 4:</p>
+                    <p class="ml-5">Lưu thành công.</p>
+                    <img src="../img/QuanLyNhanVien/suaNV_b4.png" class="img-in-main" alt="">
+                </div>
+              <!-------Step------>
+              <div>
+                <p class="title-inside">.Tìm nhân viên:</p>
+            </div>
+            <!-------Step------>
+            <!-------Step------>
+            <div class="mt-5 mb-3">
+                <p class="step"> Bước 1:</p>
+                <p class="ml-5">Nhập thông tin nhân viên cần tìm.</p>
+                <p class="ml-5">Thông tin gồm:.</p>
+                <p class="ml-5">  - Tên.</p>
+                <p class="ml-5">  - Số điện thoại .</p>
+                <img src="../img/QuanLyNhanVien/timNV_b1.png" class="img-in-main" alt="">
+            </div>
+            <div class="mt-5">
+                <p class="step"> Bước 2:</p>
+                <p class="ml-5">Danh sách nhân viên tìm được sẽ hiển thị.</p>
+                <img src="../img/QuanLyNhanVien/timNV_b2.png" class="img-in-main" alt="">
+            </div>
+            <div class="mt-5">
+                <p class="step"> Trường hợp không tồn tại nhân viên:</p>
+                <p class="ml-5">Thông báo không tìm thấy nhân viên.</p>
+                <img src="../img/QuanLyNhanVien/timNV_khongTontai.png" class="img-in-main" alt="">
+            </div>
+           
+                              
+            </div>
+            
+        </div>
+        <script>
+            let hdcn = document.getElementById("hdcn");
+            let qlul = document.getElementById("qlul");
+            qlul.style.display = 'none';
+            hdcn.addEventListener("click", () => {
+                if (qlul.style.display != 'none')
+                    qlul.style.display = 'none';
+                else
+                    qlul.style.display = 'block';
+                console.log(`done`);
+            });
+        </script>
+
+</body>
+
+</html>
