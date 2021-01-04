@@ -120,10 +120,20 @@
                 <div>
                     <p class="title-inside">. Giao diện lập hóa đơn mới:</p>
                     <div>
-
                         <img src="../img/LapHoaDonMoi/lapHoaDon.png" class="img-in-main" alt="">
-
                     </div>
+                    <!----chức năng chính---->
+                    <div>
+                        <p class="title-inside" style="color: green;">. Chức năng chính:</p>
+
+                        <ul class="nav d-flex flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(1)"> Lập hóa đơn mới</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!----chức năng chính---->
                     <div class="mt-5">
                         <p class="title-inside">. Chức năng lập hóa đơn:</p>
                     </div>
@@ -166,8 +176,9 @@
                     </div>
                     <div class="mt-5">
                         <p class="step"> Hoàn thành:</p>
-                        <p class="ml-5">Sau khi lập hóa đơn thành công thì sẽ quay về màn hình chính của trang lập hóa đơn.</p>
-                    
+                        <p class="ml-5">Sau khi lập hóa đơn thành công thì sẽ quay về màn hình chính của trang lập hóa
+                            đơn.</p>
+
                         <img src="../img/LapHoaDonMoi/lapHoaDon.png" class="img-in-main" alt="">
                     </div>
                 </div>
@@ -185,6 +196,15 @@
                     qlul.style.display = 'block';
                 console.log(`done`);
             });
+
+            function scrollF(num) {
+                if(num === 1)
+                     document.documentElement.scrollTop = 1000;      
+                if(num === 2)
+                     document.documentElement.scrollTop = 3000;   
+                if(num === 3)
+                     document.documentElement.scrollTop = 5000;                 
+            }
         </script>
 
 </body>

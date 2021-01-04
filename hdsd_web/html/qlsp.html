@@ -124,6 +124,30 @@
                         <img src="../img/QuanLySanPham/giaoDienChinhQLSP.png" class="img-in-main" alt="">
 
                     </div>
+                    <!----chức năng chính---->
+                <div>
+                    <p class="title-inside" style="color: green;">. Chức năng chính:</p>
+                    
+                    <ul class="nav d-flex flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(1)"> Chức năng Thêm sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(2)">chức năng thêm nhà cung cấp mới</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(3)"> Chức năng sữa nhà cung cấp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(4)"> chức năng Thêm loại sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(5)"> chức năng sữa thông tin loại sản phẩm</a>
+                        </li>
+                
+                    </ul>
+                </div>
+                 <!----chức năng chính---->
                     <div class="mt-5">
                         <p class="title-inside">. Chức năng Thêm sản phẩm:</p>
                     </div>
@@ -289,6 +313,19 @@
                     qlul.style.display = 'block';
                 console.log(`done`);
             });
+            
+            function scrollF(num) {
+                if(num === 1)
+                     document.documentElement.scrollTop = 1000;      
+                if(num === 2)
+                     document.documentElement.scrollTop = 4000;   
+                if(num === 3)
+                     document.documentElement.scrollTop = 7000;         
+                if(num === 4)
+                     document.documentElement.scrollTop = 11000;    
+                if(num === 5)
+                     document.documentElement.scrollTop = 13500;            
+            }
         </script>
 
 </body>

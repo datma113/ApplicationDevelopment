@@ -65,13 +65,13 @@
             display: flex;
             flex-direction: column;
         }
+
         .step {
             font-size: 20px;
             margin-left: 40px;
             font-weight: bold;
             color: red;
         }
-       
     </style>
 </head>
 
@@ -92,7 +92,7 @@
                         <a class="nav-link" href="#" id="hdcn">Hướng dẫn Chức năng</a>
                         <ul class="nav flex-column " id="qlul">
                             <li class="nav-item ql-li">
-                                <a class="nav-link " href="/html/qlhd.html">lập hóa đơn mới</a>
+                                <a class="nav-link " href="/html/lhdm.html">lập hóa đơn mới</a>
                             </li>
                             <li class="nav-item ql-li">
                                 <a class="nav-link" href="/html/qlsp.html">Quản lý sản phẩm</a>
@@ -120,11 +120,30 @@
                 <div>
                     <p class="title-inside">. Quản lý Nhân viên:</p>
                     <p>giao diện chính</p>
-                    <img src="../img/QuanLyKhachHang/qlkh_mainFrame.png"  class="img-in-main" alt="">
+                    <img src="../img/QuanLyKhachHang/qlkh_mainFrame.png" class="img-in-main" alt="">
                 </div>
+                  <!----chức năng chính---->
+                  <div>
+                    <p class="title-inside" style="color: green;">. Chức năng chính:</p>
+                    
+                    <ul class="nav d-flex flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(1)"> Chức năng thêm nhân viên mới</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(2)">Chức năng Sữa thông tin nhân viên</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(3)"> Chức năng Tìm nhân viên</a>
+                        </li>
+                      
+                
+                    </ul>
+                </div>
+                 <!----chức năng chính---->
                 <!-------Step------>
                 <div>
-                    <p class="title-inside">.Chức năng thêm nhân viên mới:</p>             
+                    <p class="title-inside">.Chức năng thêm nhân viên mới:</p>
                 </div>
                 <!-------Step------>
                 <div class="mt-5">
@@ -142,7 +161,7 @@
                     <p class="ml-5">Bấm nút "thêm".</p>
                     <img src="../img/QuanLyNhanVien/themNV_b3.png" class="img-in-main" alt="">
                 </div>
-              
+
                 <div class="mt-5">
                     <p class="step"> Bước 4:</p>
                     <p class="ml-5">Thêm thành công.</p>
@@ -174,34 +193,34 @@
                     <p class="ml-5">Lưu thành công.</p>
                     <img src="../img/QuanLyNhanVien/suaNV_b4.png" class="img-in-main" alt="">
                 </div>
-              <!-------Step------>
-              <div>
-                <p class="title-inside">.Tìm nhân viên:</p>
+                <!-------Step------>
+                <div>
+                    <p class="title-inside">.Tìm nhân viên:</p>
+                </div>
+                <!-------Step------>
+                <!-------Step------>
+                <div class="mt-5 mb-3">
+                    <p class="step"> Bước 1:</p>
+                    <p class="ml-5">Nhập thông tin nhân viên cần tìm.</p>
+                    <p class="ml-5">Thông tin gồm:.</p>
+                    <p class="ml-5"> - Tên.</p>
+                    <p class="ml-5"> - Số điện thoại .</p>
+                    <img src="../img/QuanLyNhanVien/timNV_b1.png" class="img-in-main" alt="">
+                </div>
+                <div class="mt-5">
+                    <p class="step"> Bước 2:</p>
+                    <p class="ml-5">Danh sách nhân viên tìm được sẽ hiển thị.</p>
+                    <img src="../img/QuanLyNhanVien/timNV_b2.png" class="img-in-main" alt="">
+                </div>
+                <div class="mt-5">
+                    <p class="step"> Trường hợp không tồn tại nhân viên:</p>
+                    <p class="ml-5">Thông báo không tìm thấy nhân viên.</p>
+                    <img src="../img/QuanLyNhanVien/timNV_khongTontai.png" class="img-in-main" alt="">
+                </div>
+
+
             </div>
-            <!-------Step------>
-            <!-------Step------>
-            <div class="mt-5 mb-3">
-                <p class="step"> Bước 1:</p>
-                <p class="ml-5">Nhập thông tin nhân viên cần tìm.</p>
-                <p class="ml-5">Thông tin gồm:.</p>
-                <p class="ml-5">  - Tên.</p>
-                <p class="ml-5">  - Số điện thoại .</p>
-                <img src="../img/QuanLyNhanVien/timNV_b1.png" class="img-in-main" alt="">
-            </div>
-            <div class="mt-5">
-                <p class="step"> Bước 2:</p>
-                <p class="ml-5">Danh sách nhân viên tìm được sẽ hiển thị.</p>
-                <img src="../img/QuanLyNhanVien/timNV_b2.png" class="img-in-main" alt="">
-            </div>
-            <div class="mt-5">
-                <p class="step"> Trường hợp không tồn tại nhân viên:</p>
-                <p class="ml-5">Thông báo không tìm thấy nhân viên.</p>
-                <img src="../img/QuanLyNhanVien/timNV_khongTontai.png" class="img-in-main" alt="">
-            </div>
-           
-                              
-            </div>
-            
+
         </div>
         <script>
             let hdcn = document.getElementById("hdcn");
@@ -214,6 +233,15 @@
                     qlul.style.display = 'block';
                 console.log(`done`);
             });
+            function scrollF(num) {
+                if(num === 1)
+                     document.documentElement.scrollTop = 800;      
+                if(num === 2)
+                     document.documentElement.scrollTop = 3500;   
+                if(num === 3)
+                     document.documentElement.scrollTop = 6200;         
+                     
+            }
         </script>
 
 </body>

@@ -92,7 +92,7 @@
                         <a class="nav-link" href="#" id="hdcn">Hướng dẫn Chức năng</a>
                         <ul class="nav flex-column " id="qlul">
                             <li class="nav-item ql-li">
-                                <a class="nav-link " href="/html/qlhd.html">lập hóa đơn mới</a>
+                                <a class="nav-link " href="/html/lhdm.html">lập hóa đơn mới</a>
                             </li>
                             <li class="nav-item ql-li">
                                 <a class="nav-link" href="/html/qlsp.html">Quản lý sản phẩm</a>
@@ -122,6 +122,25 @@
                     <p>giao diện chính</p>
                     <img src="../img/QuanLyKhachHang/qlkh_mainFrame.png"  class="img-in-main" alt="">
                 </div>
+                    <!----chức năng chính---->
+                    <div>
+                        <p class="title-inside" style="color: green;">. Chức năng chính:</p>
+                        
+                        <ul class="nav d-flex flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(1)"> Chức năng thêm khách hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(2)">Chức năng Sữa thông tin khách hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(3)"> Chức năng tìm kiếm khách hàng</a>
+                            </li>
+                          
+                    
+                        </ul>
+                    </div>
+                     <!----chức năng chính---->
                 <!-------Step------>
                 <!------------------------------------------------------->
                 <div class="mt-5">
@@ -215,6 +234,16 @@
                     qlul.style.display = 'block';
                 console.log(`done`);
             });
+              
+            function scrollF(num) {
+                if(num === 1)
+                     document.documentElement.scrollTop = 1000;      
+                if(num === 2)
+                     document.documentElement.scrollTop = 3500;   
+                if(num === 3)
+                     document.documentElement.scrollTop = 6300;         
+                     
+            }
         </script>
 
 </body>

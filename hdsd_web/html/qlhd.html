@@ -92,7 +92,7 @@
                         <a class="nav-link" href="#" id="hdcn">Hướng dẫn Chức năng</a>
                         <ul class="nav flex-column " id="qlul">
                             <li class="nav-item ql-li">
-                                <a class="nav-link " href="/html/qlhd.html">lập hóa đơn mới</a>
+                                <a class="nav-link " href="/html/lhdm.html">lập hóa đơn mới</a>
                             </li>
                             <li class="nav-item ql-li">
                                 <a class="nav-link" href="/html/qlsp.html">Quản lý sản phẩm</a>
@@ -121,18 +121,38 @@
                     <p class="title-inside">. Quản lý Hóa đơn:</p>
                     <p>giao diện chính</p>
                     <img src="../img/QuanLyHoaDon/giaoDienChinh.png" class="img-in-main" alt="">
-                </div>
 
+                  
+                </div>
+                <!----chức năng chính---->
+                <div>
+                    <p class="title-inside" style="color: green;">. Chức năng chính:</p>
+                    
+                    <ul class="nav d-flex flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(1)"> Tìm hóa đơn</a>
+                        </li>
+                
+                    </ul>
+                </div>
+                 <!----chức năng chính---->
                 <!-------Step------>
+               
                 <div class="mt-5 mb-3">
+                    <div>
+                        <p class="title-inside">.Tìm hóa đơn:</p>
+                    </div>
                     <p class="step"> Bước 1:</p>
                     <p class="ml-5">Nhập thông tin Hóa cần tìm.</p>
                     <p class="ml-5">Thông tin gồm:.</p>
+                    <p class="ml-5"> - Mã hóa đơn.</p>
                     <p class="ml-5"> - Tên khách hàng.</p>
                     <p class="ml-5"> - Số điện thoại .</p>
                     <p class="ml-5"> - CMND khách hàng .</p>
-
+                   <div>
                     <img src="../img/QuanLyHoaDon/timHD_b1.png" class="img-in-main" alt="">
+
+                   </div>
                 </div>
                 <div class="mt-5 mb-3">
                     <p class="step"> Bước 2:</p>
@@ -175,6 +195,11 @@
                     qlul.style.display = 'block';
                 console.log(`done`);
             });
+
+            function scrollF(num) {
+                if(num === 1)
+                     document.documentElement.scrollTop = 800;                    
+            }
         </script>
 
 </body>
