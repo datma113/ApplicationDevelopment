@@ -29,6 +29,7 @@ public class DaoSanpham {
 		sessionFactory = MySessionFactory.getInstance().getSessionFactory();
 		fullTextSession = MySessionFactory.getInstance().getFullTextSession();
 		qb = fullTextSession.getSearchFactory().buildQueryBuilder().forEntity(Sanpham.class).get();
+
 	}
 
 	/**

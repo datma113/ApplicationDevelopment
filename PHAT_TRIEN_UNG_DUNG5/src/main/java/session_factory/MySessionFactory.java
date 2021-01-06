@@ -27,7 +27,6 @@ public class MySessionFactory {
 				.addAnnotatedClass(entity.Khachhang.class).getMetadataBuilder().build();
 
 		sessionFactory = meta.getSessionFactoryBuilder().build();
-
 		Session session = sessionFactory.openSession();
 		fullTextSession = Search.getFullTextSession(session);
 		try {

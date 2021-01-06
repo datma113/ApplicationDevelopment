@@ -13,6 +13,7 @@ import org.hibernate.search.query.dsl.QueryBuilder;
 import entity.Chitiethoadon;
 import entity.Hoadon;
 import entity.Khachhang;
+import entity.Sanpham;
 import session_factory.MySessionFactory;
 
 /**
@@ -216,8 +217,24 @@ public class DaoHoadon {
 			h.getChitiethoadons().forEach(x -> {
 				x.setHoadon(h);
 				session.save(x);
+				Sanpham sp = x.getSanpham();
+				sp.setSoluongton(sp.getSoluongton() - x.getSoluong());
+				session.update(sp);
 			});
 			tran.commit();
+			/*
+			 * cập nhật lại index cho các sản phẩm vừa mua
+			 */
+			h.getChitiethoadons().forEach(x -> {
+				Transaction tx = fullTextSession.getTransaction();
+				try {
+					tx.begin();
+					fullTextSession.index(x.getSanpham());
+					tx.commit();
+				} catch (Exception e) {
+					tx.rollback();
+				}
+			});
 			return true;
 		} catch (Exception e) {
 			tran.rollback();

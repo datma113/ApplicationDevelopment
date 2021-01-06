@@ -16,8 +16,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import custom.CustomJButtonPaging;
-import custom.CustomJLabel;
+import custom.MyJButtonPaging;
+import custom.MyJLabel;
 
 public class Decorator<T> {
 	private DataProvider<T> dataProvider;
@@ -28,7 +28,7 @@ public class Decorator<T> {
 	private JPanel pageLinkPanel;
 	private static final int MaxPagingCompToShow = 9;
 	private static final String Ellipses = "...";
-	private CustomJLabel labelSum = new CustomJLabel();
+	private MyJLabel labelSum = new MyJLabel();
 
 	private Decorator(DataProvider<T> dataProvider, int[] pageSizes, int defaultPageSize) {
 		this.dataProvider = dataProvider;
@@ -82,7 +82,7 @@ public class Decorator<T> {
 				currentPage = ((currentPageStartRow - 1) / currentPageSize) + 1;
 				paginate();
 			});
-			paginationPanel.add(new CustomJLabel("Kích thước trang: "));
+			paginationPanel.add(new MyJLabel("Kích thước trang: "));
 			paginationPanel.add(pageComboBox);
 			pageComboBox.setSelectedItem(currentPageSize);
 		}
@@ -132,7 +132,7 @@ public class Decorator<T> {
 	}
 
 	private void addPageButton(JPanel parentPanel, ButtonGroup buttonGroup, int pageNumber) {
-		CustomJButtonPaging toggleButton = new CustomJButtonPaging(Integer.toString(pageNumber));
+		MyJButtonPaging toggleButton = new MyJButtonPaging(Integer.toString(pageNumber));
 		toggleButton.setPreferredSize(new Dimension(35, 35));
 		toggleButton.setToolTipText("Trang " + pageNumber);
 		toggleButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));

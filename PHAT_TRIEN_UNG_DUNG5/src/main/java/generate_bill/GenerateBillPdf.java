@@ -7,6 +7,8 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Paragraph;
@@ -43,8 +45,15 @@ public class GenerateBillPdf {
 		Document doc = new Document();
 		try {
 
+			/*
+			 * Path currentRelativePath = Paths.get(""); String path =
+			 * currentRelativePath.toAbsolutePath().toString() + "/hoadon";
+			 * 
+			 * if (!new File(path).exists()) { new File(path).mkdirs(); }
+			 */
+
 			PdfWriter write = PdfWriter.getInstance(doc,
-					new FileOutputStream("t:hoadon/" + mahd + "_" + kh.getMakhachhang() + ".pdf"));
+					new FileOutputStream("t:/hoadon/" + mahd + "_" + kh.getMakhachhang() + ".pdf"));
 
 			BaseFont bf1 = BaseFont.createFont("font/cour.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
 			Font f1 = new Font(bf1, 10);
@@ -186,7 +195,9 @@ public class GenerateBillPdf {
 
 			doc.close();
 			write.close();
+
 		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "Không thể tạo hóa đơn");
 		}
 	}
 }
