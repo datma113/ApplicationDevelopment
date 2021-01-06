@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn sử dụng</title>
+    <link rel="stylesheet" href="../bs/bootstrap.min.css">
+    <style>
+        .title-hdsd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+        .container {
+            max-width: 1600px;
+        }
+
+        .spe {
+            background-color: #dddddd;
+            border-bottom: 1px solid black;
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+        .nav-link:hover {
+            color: red;
+
+        }
+
+        .title-inside {
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        .ql-li {
+            margin-left: 25px;
+            border-left: 2px solid red;
+        }
+
+        #qlul {
+            display: none;
+        }
+
+        .img-in-main {
+            width: 80%;
+            height: 80%;
+        }
+
+        .h1-title-main {
+            display: flex;
+            margin-left: 30%;
+
+        }
+
+        .chung {
+            display: flex;
+            flex-direction: column;
+        }
+        .step {
+            font-size: 20px;
+            margin-left: 40px;
+            font-weight: bold;
+            color: red;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="title-hdsd">
+            <div>Hướng dẫn sử dụng</div>
+            <div>Phần mềm quản lý cửa hàng linh kiện điện tử Thành Đạt</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3  ">
+                <ul class="nav flex-column">
+                    <li class="nav-item spe">
+                        <a class="nav-link " href="../html/main.html">Giới thiệu phần mềm</a>
+                    </li>
+                    <li class="nav-item spe">
+                        <a class="nav-link" href="#" id="hdcn">Hướng dẫn Chức năng</a>
+                        <ul class="nav flex-column " id="qlul">
+                            <li class="nav-item ql-li">
+                                <a class="nav-link " href="../html/lhdm.html">lập hóa đơn mới</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="../html/qlsp.html">Quản lý sản phẩm</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="../html/qlkh.html">Quản lý khách hàng</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="../html/qlnv.html">Quản lý Nhân viên</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="../html/qlhd.html">Quản lý hóa đơn</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="../html/thongke.html">Thống kê</a>
+                            </li>
+                            <li class="nav-item ql-li">
+                                <a class="nav-link" href="../html/saoluu.html">Sao lưu dữ liệu</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-9 chung">
+                <div>
+                    <p class="title-inside">.Sao lưu dữ liệu:</p>
+                   
+                </div>
+            
+                    <!----chức năng chính---->
+                    <div>
+                        <p class="title-inside" style="color: green;">. Chức năng chính:</p>
+                        
+                        <ul class="nav d-flex flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link event-click" style="cursor: pointer" onclick="scrollF(1)"> Chức năng sao lưu dữ liệu</a>
+                            </li>
+                          
+                        </ul>
+                    </div>
+                     <!----chức năng chính---->
+                <!-------Step------>
+                <!------------------------------------------------------->
+                <div class="mt-5">
+                    <p class="title-inside">. Chức năng sao lưu dữ liệu:</p>
+                </div>
+                <div class="mt-5">
+                    <p class="step"> Bước 1:</p>
+                    <p class="ml-5">chọn mục sao lưu dữ liệu trên giao diện chính.</p>
+                    <img src="../img/SaoLuu/saoLuu1.png" class="img-in-main" alt="">
+                </div>
+                <!-------Step------>
+                <div class="mt-5">
+                    <p class="step"> Bước 2:</p>
+                    <p class="ml-5">giao diện sao lưu hiển thị.</p>
+                    <img src="../img/SaoLuu/saoLuu2.png" class="img-in-main" alt="">
+                </div>
+                <!-------Step------>
+                <div class="mt-5">
+                    <p class="step"> Bước 3:</p>
+                    <p class="ml-5">Bấm nút "Sao lưu".</p>
+                    <img src="../img/SaoLuu/saoLuu3.png" class="img-in-main" alt="">
+                </div>
+                <!-------Step------>
+                <div class="mt-5">
+                    <p class="step"> Bước 4:</p>
+                    <p class="ml-5">chọn đường dẫn.</p>
+                    <img src="../img/SaoLuu/saoLuu4.png" class="img-in-main" alt="">
+                </div>
+                <!-------Step------>
+                <div class="mt-5">
+                    <p class="step"> Bước 5:</p>
+                    <p class="ml-5">chọn "Open".</p>
+                    <img src="../img/SaoLuu/saoLuu5.png" class="img-in-main" alt="">
+                </div>
+                <!-------Step------>  <div class="mt-5">
+                    <p class="step"> Bước 6:</p>
+                    <p class="ml-5">Sao lưu thành công.</p>
+                    <img src="../img/SaoLuu/saoLuu6.png" class="img-in-main" alt="">
+                </div>
+                <!-------Step------>
+                <div class="mt-5">
+                    <p class="step"> Bước 7:</p>
+                    <p class="ml-5">file backup được tạo ra .</p>
+                    <img src="../img/SaoLuu/saoLuu7.png" class="img-in-main" alt="">
+                </div>
+                <!-------Step------>
+                <!------------------------------------------------------->
+                
+            </div>
+            
+        </div>
+        <script>
+            let hdcn = document.getElementById("hdcn");
+            let qlul = document.getElementById("qlul");
+            qlul.style.display = 'none';
+            hdcn.addEventListener("click", () => {
+                if (qlul.style.display != 'none')
+                    qlul.style.display = 'none';
+                else
+                    qlul.style.display = 'block';
+                console.log(`done`);
+            });
+              
+            function scrollF(num) {
+                if(num === 1)
+                     document.documentElement.scrollTop = 1000;      
+                if(num === 2)
+                     document.documentElement.scrollTop = 3500;   
+                if(num === 3)
+                     document.documentElement.scrollTop = 6300;         
+                     
+            }
+        </script>
+
+</body>
+
+</html>
